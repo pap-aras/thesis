@@ -1,0 +1,1496 @@
+
+.home_page{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70vh; /* Height of the page */
+}
+
+body{
+    background-image: url('background-img.jpg'); /* Path to your image */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fixed background */
+    background-size: cover; /* Cover the entire screen */
+    font-family: sans-serif; /* Font family for the page */
+}
+.headers{
+    position: absolute;
+    top: 100px; /* Align to the top of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for element width */
+    font-size: 3em; /* Font size for the title */
+    color: #3f3cda; /* Text color */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Margin from the top */
+}
+
+.sub-headers{
+    color:#3f3cda;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.h2-home{
+    top: 300px;
+    font-size: 2em; /* Font size for the subtitle */
+}
+.home_btn{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 40vh;
+    border-radius: 80px;
+    border-width: 1px;
+    border-color: #3f3cda;
+    top: 200px;
+    font-weight: bold;
+    font-size: large;
+    color: #3f3cda;
+}
+
+.class-title {
+    width: 500px; /* Width of the title */
+    text-align: center; /* Center text */
+    font-size: 2em; /* Font size for the class title */
+    border-radius: 10px;
+    background-color: #3f3cda;
+    color: bisque;
+    margin: 0 auto; /* Center the title horizontally */
+}
+
+.homePage-btn{
+    margin: 0 10px 10px 0;
+}
+.homePage-btn:hover{
+    background-color: #3f3cda; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hidden{
+    display: none;
+}
+
+.footer{
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(24, 0, 241, 0.6);
+    color: white; /* Footer text color */
+    text-align: center; /* Center text in footer */
+    padding: 1px; /* Padding for footer */
+    font-size: small;
+}
+
+.home_description{
+    text-align: center; /* Center text */
+    padding: 90px 500px 0; /* Top, left/right, bottom padding */
+    font-size: smaller;
+}
+
+/* CSS for the class buttons */
+.classes {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 300px; /* Space from the top */
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+.class-btn{
+    background-color: #3f3cda; /* Background color */
+    color: white; /* Text color */
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size */
+    border-style:double; /* Border style */
+    border-width: 10px; /* Border width */
+}
+
+.class-btn:hover{
+    border-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.class-btn:active{    
+    color: black; /* Change text color on active */
+    border-color: black;
+    
+}
+/* CSS for the return button */
+.return-btn{
+    background-color: aqua; /* Background color */
+    color: black; /* Text color */
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size */
+    border-style: none; /* No border */
+}
+
+.return-btn:hover{
+    background-color: black;
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    transition: 0.3s;
+}
+.return-btn:active{    
+    color: black; /* Change text color on active */
+    border-color: black;
+}
+
+/* CSS for Fourth buttons */
+
+.lesson1D-btn,
+.lesson2D-btn,
+.lesson3D-btn,
+.lesson4D-btn,
+.lesson5D-btn,
+.lesson6D-btn {
+    position: relative;
+    font-size: 1.08rem;
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.lesson1D-btn::before,
+.lesson2D-btn::before,
+.lesson3D-btn::before,
+.lesson4D-btn::before,
+.lesson5D-btn::before,
+.lesson6D-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+    border-radius: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.lesson1D-btn::before {
+    background-image: url('glwssaDgrade.jpg');
+}
+
+.lesson2D-btn::before {
+    background-image: url('mathimatikaDgrade.jpg');
+}
+
+.lesson3D-btn::before {
+    background-image: url('istoriaDgrade.jpg');
+}
+
+.lesson4D-btn::before {
+    background-image: url('meletiDgrade.jpg');
+}
+
+.lesson5D-btn::before {
+    background-image: url('agglikaDgrade.jpg');
+}
+
+.lesson6D-btn::before {
+    background-image: url('tpe.jpg');
+}
+
+
+[class^="lesson"][class$="-btn"] span {
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.lesson1D-btn:hover::before,
+.lesson2D-btn:hover::before,
+.lesson3D-btn:hover::before,
+.lesson4D-btn:hover::before,
+.lesson5D-btn:hover::before,
+.lesson6D-btn:hover::before {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+}
+
+.lesson1D-btn span {
+    background-color: red;
+}
+
+.lesson2D-btn span {
+    background-color: green;
+}
+
+.lesson3D-btn span {
+    background-color: orange;
+}
+
+.lesson4D-btn span {
+    background-color: purple;
+}
+
+.lesson5D-btn span {
+    background-color: teal;
+}
+
+.lesson6D-btn span {
+    background-color: blue;
+}
+
+/* CSS for the under construction page */
+.fix {
+    background-image: url('underConstruction.png') !important;
+    background-size: cover !important;
+    background-position: top !important;
+    background-repeat: no-repeat !important;
+    position:fixed!important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1 !important;
+}
+
+#fix {
+    text-align: center;
+    position: sticky;
+    padding-top: 300px;
+}
+
+/* CSS for the Sixth Grade lessons */
+.lesson1F-btn,
+.lesson2F-btn,
+.lesson3F-btn,
+.lesson4F-btn,
+.lesson5F-btn,
+.lesson6F-btn,
+.lesson7F-btn,
+.lesson8F-btn,
+.lesson9F-btn,
+.lesson10F-btn {
+    position: relative;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.lesson1F-btn::before,
+.lesson2F-btn::before,
+.lesson3F-btn::before,
+.lesson4F-btn::before,
+.lesson5F-btn::before,
+.lesson6F-btn::before,
+.lesson7F-btn::before,
+.lesson8F-btn::before,
+.lesson9F-btn::before,
+.lesson10F-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+    border-radius: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.lesson1F-btn::before {
+    background-image: url('glwssaFgrade.jpg');
+}
+
+.lesson2F-btn::before {
+    background-image: url('mathimatikaFgrade.jpg');
+}
+
+.lesson3F-btn::before {
+    background-image: url('istoriaFgrade.jpg');
+}
+
+.lesson4F-btn::before {
+    background-image: url('geografiaFgrade.jpg');
+}
+
+.lesson5F-btn::before {
+    background-image: url('fysikiFgrade.jpg');
+}
+
+.lesson6F-btn::before {
+    background-image: url('kpaFgrade.jpg');
+}
+.lesson7F-btn::before {
+    background-image: url('agglikaFgrade.jpg');
+}
+.lesson8F-btn::before {
+    background-image: url('germanikaFgrade.png');
+}
+.lesson9F-btn::before {
+    background-image: url('gallikaFgrade.jpg');
+}
+.lesson10F-btn::before {
+    background-image: url('tpe.jpg');
+}
+
+
+[class^="lesson"][class$="-btn"] span {
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.lesson1F-btn:hover::before,
+.lesson2F-btn:hover::before,
+.lesson3F-btn:hover::before,
+.lesson4F-btn:hover::before,
+.lesson5F-btn:hover::before,
+.lesson6F-btn:hover::before,
+.lesson7F-btn:hover::before,
+.lesson8F-btn:hover::before,
+.lesson9F-btn:hover::before,
+.lesson10F-btn:hover::before {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+}
+
+.lesson1F-btn span {
+    background-color: rgb(185, 166, 131);
+}
+
+.lesson2F-btn span {
+    background-color: purple;
+}
+
+.lesson3F-btn span {
+    background-color: orange;
+}
+
+.lesson4F-btn span {
+    background-color: rgb(93, 93, 238);
+}
+
+.lesson5F-btn span {
+    background-color: teal;
+}
+
+.lesson6F-btn span {
+    background-color: blue;
+}
+.lesson7F-btn span {
+    background-color: red;
+}
+.lesson8F-btn span {
+    background-color: orangered;
+}
+.lesson9F-btn span {
+    background-color: blue;
+
+}
+.lesson10F-btn span {
+    background-color: blue;
+}
+
+/* CSS for the teacher page */
+.verify-page {
+    text-align: center; /* Center text inside */
+    margin: 0 auto; /* Center horizontally */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure sections are positioned relative to the flow */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding-top: 35vh; /* Space from the top */
+}
+
+.input-txt{
+    width: 300px; /* Width of the input field */
+    height: 50px; /* Height of the input field */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.3rem; /* Padding inside the input field */
+    font-size: 1.5rem; /* Font size for the input text */
+    margin: 1.2rem; /* Margin around the input field */
+    border-color: #3f3cda;
+}
+
+.input-txt:focus{
+    outline: none; /* Remove outline on focus */
+    border-color: #3f3cda; /* Change border color on focus */
+    box-shadow: 0 0 5px #3f3cda; /* Add shadow on focus */
+}
+
+.input-txt::placeholder{
+    color: #3f3cda; /* Placeholder text color */
+    opacity: 0.5; /* Opacity for placeholder text */
+}
+
+.submit-btn{
+    background-color: #3f3cda; /* Background color */
+    color: white; /* Text color */
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold;
+    border-style: none; /* No border */
+}
+.submit-btn:hover{
+    background-color: black; /* Change background color on hover */
+    color: #3f3cda; /* Change text color on hover */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.teacher-rtrn {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.wrong-psswrd{
+    color: red;
+}
+
+.new-btn{
+    border-color: blue; /* Border color */
+    color: blue; /* Text color */
+}
+
+.new-btn:hover{
+    background-color: blue; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.all-quizzes-btn{
+    border-color: green; /* Border color */
+    color: green; /* Text color */
+}
+
+.all-quizzes-btn:hover{
+    background-color: green; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* CSS for the quiz page */
+.quiz-page{
+    text-align: center; /* Center text inside */
+    margin: 0 auto; /* Center horizontally */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure sections are positioned relative to the flow */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding-top: 35vh; /* Space from the top */
+}
+
+.quiz{
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height:100px;
+    width: 300px; /* Width of the quiz button */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.3rem; /* Padding inside the quiz button */
+    font-size: 1.5rem; /* Font size for the quiz button */
+    font-weight: bold; /* Bold text */
+    margin: 1.2rem; /* Margin around the quiz button */
+}
+
+.subject-select{
+    width: 52rem; /* Width of the subject select dropdown */
+    height: 40px; /* Height of the subject select dropdown */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 1.5rem; /* Font size for the subject select dropdown */
+    margin: 20px; /* Margin around the subject select dropdown */
+    border-color: #3f3cda;
+    border-width: 5px;
+    color: #3f3cda; /* Text color */
+    
+}
+.subject-select:hover{
+    cursor: pointer;
+    background-color: rgb(202, 196, 196); /* Change background color on hover */
+    transition: 0.3s;
+}
+
+.quiz-creation{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-layout{
+    border-radius: 20px; /* Rounded corners */
+    padding: 0.5rem;
+    font-size: 1.5rem; /* Font size for the input text */
+    margin: 1.2rem; /* Margin around the input field */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-color: #3f3cda; /* Border color */
+    border-style: solid; /* Solid border style */
+    border-width: 5px; /* Border width */
+    width: 50rem; /* Width of the input field */
+    height: 40px; /* Height of the input field */
+}
+
+.answer-option{
+    font-size: 1.5rem; /* Font size for the answer option */
+    font-weight: bold; /* Bold text */
+}
+
+.quiz-border{
+    border-radius: 10px; /* Rounded corners */
+    border-style:solid; /* Solid border style */
+    border-width: 5; /* Border width */
+    border-color: #3f3cda; /* Border color */
+    width: 50%; /* Width of the quiz border */
+    height: 50%; /* Height of the quiz border */
+    text-align: center; /* Center text inside */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 auto; /* Center vertically */
+    position: relative; /* Ensure sections are positioned relative to the flow */
+    justify-content: center; /* Center vertically */
+    background-color: seagreen; /* Background color */
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    
+}
+
+.quiz-options{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-top: 20px; /* Space from the top */
+}
+
+.quiz-question{
+    font-size: 2rem; /* Font size for the quiz question */
+    font-weight: bold; /* Bold text */
+    color: black; /* Text color */
+    margin-bottom: 20px; /* Space below the question */
+    background-color:burlywood ;/* Background color */
+    text-align: center;
+}
+
+#grade {
+    position: absolute;
+    padding-left: 600px;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback.correct{
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    padding-left:290px;
+}
+
+.feedback.wrong{
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    padding-left:290px;
+}
+
+.info-btn{
+background-color: #3B82F6;
+color: white;
+font-weight: bold;
+font-size: xx-large;
+font-family: Arial, Helvetica, sans-serif;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border: none;
+position: fixed;
+right: 300px;
+top:10%;
+transform: translateY(-50%);
+z-index: 1000;
+cursor: pointer;
+}
+
+.points-calculation{
+  visibility: hidden;
+  width: 220px;
+  background-color:#3f3cda;
+  color: gold;
+  text-align: left;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: large;
+
+  /* Positioning */
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* below the "i" */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Optional arrow */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.info-btn:hover .points-calculation{
+    visibility: visible;
+    opacity: 1;
+}
+@media screen and (max-width: 1400px) {
+    #grade {
+        padding-left: 300px;
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #grade {
+        padding-left: 40px;
+        padding-top: 80px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #grade {
+        padding-left: 0;
+        padding-top: 30px;
+        position: relative;
+    }
+}
+
+.quiz-btn{
+    background-color: white; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    color: black; /* Text color */
+    padding: 1.3rem; /* Padding inside the quiz button */
+    margin: 0.3rem; /* Margin around the quiz button */
+    width: 500px;
+    font-size: 1.5rem; /* Font size for the quiz button */
+    font-weight: bold; /* Bold text */
+}
+.quiz-btn:hover{
+    background-color: grey; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    border-color: grey;
+    transition: 0.3s;
+}
+.quiz-btn:active{
+    background-color: black; /* Change background color on active */
+    color: white; /* Change text color on active */
+    border-color: black;
+}
+
+.wrong-code{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem; /* Font size for the wrong code message */
+}
+#all-quizzes-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to next line if needed */
+    gap: 1rem; /* Optional: adds space between items */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.quiz-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 1.3rem;
+    margin: 1.2rem;
+    border-radius: 20px;
+    border: 5px solid black;
+    width: 200px;
+}
+
+.quiz-input {
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding-left: 100px;
+    
+}
+
+.delete-quiz{
+    background-color: red; /* Background color */
+    color: white; /* Text color */
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.delete-quiz:hover{
+    background-color: orange; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    border-color: black;
+    transition: 0.3s;
+}
+
+.quiz-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 20px; /* Space between quiz items */
+    list-style: none; /* Remove default bullets from ul */
+    padding: 0;
+}
+
+.all-quiz-rtn {
+    position: absolute;
+    bottom: 50px; /* Position it near the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for element width */
+    margin: 0;
+}
+
+.class-rtn{
+    transform: translateX(260%);
+    position: absolute;
+}
+
+.results{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 1.2rem; /* Margin around the results */
+    padding: 1.3rem; /* Padding inside the results */
+    background-color:#3f3cda; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Font size for the results */
+    font-weight: bold; /* Bold text */
+    border-style: solid; /* Solid border style */
+    border-width: 5px; /* Border width */
+    border-color: black; /* Border color */
+    transition: 1s ease; /* Smooth transition for background color */
+    
+
+}
+
+.recommendations{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 1.2rem; /* Margin around the recommendations */
+    padding: 1.3rem; /* Padding inside the recommendations */
+    background-color: white; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    color: #3f3cda; /* Text color */
+    font-size: 1.5rem; /* Font size for the recommendations */
+    font-weight: bold; /* Bold text */
+    border-style: solid; /* Solid border style */
+    border-width: 5px; /* Border width */
+    border-color: #3f3cda; /* Border color */
+}
+
+.congrats-msg{
+    background-color: bisque; /* Background color */
+    color: #3f3cda; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.3rem; /* Padding inside the message */
+}
+
+.stats{
+    color: bisque; /* Text color */
+    text-decoration: underline;
+}
+
+.extra{
+    background-color: #3f3cda; /* Background color */
+    color: white; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.3rem; /* Padding inside the extra message */
+    font-size: 1.5rem; /* Font size for the extra message */
+    font-weight: bold; /* Bold text */
+}
+
+.extra:hover{
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    border-color: black;
+    transition: 0.3s;
+}
+
+.no-quizzes{
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.3rem; /* Padding inside the message */
+    font-size: 1.5rem; /* Font size for the message */
+    font-weight: bold; /* Bold text */
+    transform: translateY(20vh); /* Move down */
+    padding-top: 100px;
+    text-align: center;
+}
+
+.exit-btn{
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.multiple-btn{
+    background-color: #3B82F6; /* Background color */
+    color: white; /* Text color */
+    padding: 1.3rem; /* Padding inside the button */
+    margin: 1.2rem; /* Margin around the button */
+    width: 300px; /* Width of the button */
+    height: 100px; /* Height of the button */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size for the button */
+    font-weight: bold; /* Bold text */
+}
+
+.right-wrong-btn{
+    background-color: #EF4444; /* Background color */
+    color: white; /* Text color */
+    padding: 1.3rem; /* Padding inside the button */
+    margin: 1.2rem; /* Margin around the button */
+    width: 300px; /* Width of the button */
+    height: 100px; /* Height of the button */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size for the button */
+    font-weight: bold; /* Bold text */
+}
+
+.filling-btn{
+    background-color: #FBBF24; /* Background color */
+    color: white; /* Text color */
+    padding: 1.3rem; /* Padding inside the button */
+    margin: 1.2rem; /* Margin around the button */
+    width: 300px; /* Width of the button */
+    height: 100px; /* Height of the button */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Font size for the button */
+    font-weight: bold; /* Bold text */
+}
+
+.multiple-btn:hover,
+.right-wrong-btn:hover,
+.filling-btn:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
+    border-color: black; /* Change border color on hover */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.right-wrong-fix{
+    top: 250px;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        font-size: 1.1rem;
+    }
+    .home_page {
+        flex-direction: column;
+        height: auto;
+        min-height: 70vh;
+        padding: 2rem 0;
+    }
+    .headers {
+        font-size: 2em;
+        top: 60px;
+        margin-top: 10px;
+        padding: 0 1rem;
+    }
+    .h2-home {
+        top: 180px;
+        font-size: 1.3em;
+    }
+    .home_btn {
+        width: 80vw;
+        max-width: 400px;
+        height: 10vh;
+        font-size: 1.1em;
+        top: 100px;
+    }
+    .class-title {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.3em;
+    }
+    .home_description {
+        padding: 40px 2vw 0;
+        font-size: 1em;
+    }
+    .classes {
+        flex-direction: column;
+        padding-top: 120px;
+        padding-right: 0;
+        padding-left: 0;
+        gap: 1rem;
+    }
+    .class-btn,
+    .return-btn,
+    .lesson1D-btn,
+    .lesson2D-btn,
+    .lesson3D-btn,
+    .lesson4D-btn,
+    .lesson5D-btn,
+    .lesson6D-btn,
+    .lesson1F-btn,
+    .lesson2F-btn,
+    .lesson3F-btn,
+    .lesson4F-btn,
+    .lesson5F-btn,
+    .lesson6F-btn,
+    .lesson7F-btn,
+    .lesson8F-btn,
+    .lesson9F-btn,
+    .lesson10F-btn {
+        width: 90vw;
+        max-width: 400px;
+        height: 70px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .verify-page,
+    .quiz-page {
+        padding-top: 15vh;
+    }
+    .input-txt,
+    .submit-btn,
+    .quiz-layout,
+    .subject-select {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .quiz-border {
+        width: 95vw;
+        max-width: 600px;
+        min-width: unset;
+        font-size: 1.1rem;
+    }
+    .quiz-btns {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .quiz-item {
+        width: 90vw;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    .quiz-container {
+        gap: 10px;
+    }
+    .results,
+    .recommendations,
+    .extra,
+    .no-quizzes {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .footer {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+    .all-quiz-rtn,
+    .class-rtn,
+    .teacher-rtrn {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw;
+        max-width: 400px;
+    }
+    iframe {
+        width: 90vw !important;
+        max-width: 600px;
+        height: 50vh !important;
+        min-height: 200px;
+        border-radius: 12px;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .home_page {
+        flex-direction: column;
+        height: auto;
+        min-height: 70vh;
+        padding: 1rem 0;
+    }
+    .headers {
+        font-size: 1.2em;
+        top: 30px;
+        margin-top: 5px;
+        padding: 0 0.5rem;
+    }
+    .h2-home {
+        top: 80px;
+        font-size: 1em;
+    }
+    .home_btn {
+        width: 95vw;
+        max-width: 300px;
+        height: 8vh;
+        font-size: 1em;
+        top: 60px;
+    }
+    .class-title {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+    }
+    .home_description {
+        padding: 20px 2vw 0;
+        font-size: 0.95em;
+    }
+    .classes {
+        flex-direction: column;
+        padding-top: 60px;
+        padding-right: 0;
+        padding-left: 0;
+        gap: 0.5rem;
+    }
+    .class-btn,
+    .return-btn,
+    .lesson1D-btn,
+    .lesson2D-btn,
+    .lesson3D-btn,
+    .lesson4D-btn,
+    .lesson5D-btn,
+    .lesson6D-btn,
+    .lesson1F-btn,
+    .lesson2F-btn,
+    .lesson3F-btn,
+    .lesson4F-btn,
+    .lesson5F-btn,
+    .lesson6F-btn,
+    .lesson7F-btn,
+    .lesson8F-btn,
+    .lesson9F-btn,
+    .lesson10F-btn {
+        width: 95vw;
+        max-width: 300px;
+        height: 50px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .verify-page,
+    .quiz-page {
+        padding-top: 7vh;
+    }
+    .input-txt,
+    .submit-btn,
+    .quiz-layout,
+    .subject-select {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .quiz-border {
+        width: 98vw;
+        max-width: 320px;
+        min-width: unset;
+        font-size: 1em;
+    }
+    .quiz-btn {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .quiz-item {
+        width: 95vw;
+        max-width: 200px;
+        font-size: 0.95em;
+    }
+    .quiz-container {
+        gap: 5px;
+    }
+    .results,
+    .recommendations,
+    .extra,
+    .no-quizzes {
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .footer {
+        font-size: 0.8em;
+        padding: 0.3em;
+    }
+    .all-quiz-rtn,
+    .class-rtn,
+    .teacher-rtrn {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95vw;
+        max-width: 300px;
+    }
+    .fix {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .quiz-question {
+        font-size: 1.5em;
+    }
+    .stats {
+        font-size: 1em;
+    }
+    iframe {
+        width: 98vw !important;
+        max-width: 100vw;
+        height: 35vh !important;
+        min-height: 120px;
+        border-radius: 8px;
+    }
+}
+    
+@media screen and (max-width: 1400px) {
+    .home_description {
+        padding: 60px 200px 0;
+    }
+    .classes {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        font-size: 1.1rem;
+    }
+    .home_page {
+        flex-direction: column;
+        height: auto;
+        min-height: 70vh;
+        padding: 2rem 0;
+    }
+    .headers {
+        font-size: 2em;
+        top: 60px;
+        margin-top: 10px;
+        padding: 0 1rem;
+    }
+    .h2-home {
+        top: 180px;
+        font-size: 1.3em;
+    }
+    .home_btn {
+        width: 80vw;
+        max-width: 400px;
+        height: 10vh;
+        font-size: 1.1em;
+        top: 100px;
+    }
+    .class-title {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.3em;
+    }
+    .home_description {
+        padding: 40px 2vw 0;
+        font-size: 1em;
+    }
+    .classes {
+        flex-direction: column;
+        padding-top: 120px;
+        padding-right: 0;
+        padding-left: 0;
+        gap: 1rem;
+    }
+    .class-btn,
+    .return-btn,
+    .lesson1D-btn,
+    .lesson2D-btn,
+    .lesson3D-btn,
+    .lesson4D-btn,
+    .lesson5D-btn,
+    .lesson6D-btn,
+    .lesson1F-btn,
+    .lesson2F-btn,
+    .lesson3F-btn,
+    .lesson4F-btn,
+    .lesson5F-btn,
+    .lesson6F-btn,
+    .lesson7F-btn,
+    .lesson8F-btn,
+    .lesson9F-btn,
+    .lesson10F-btn {
+        width: 90vw;
+        max-width: 400px;
+        height: 70px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .verify-page,
+    .quiz-page {
+        padding-top: 15vh;
+    }
+    .input-txt,
+    .submit-btn,
+    .quiz-layout,
+    .subject-select {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .quiz-border {
+        width: 95vw;
+        max-width: 600px;
+        min-width: unset;
+        font-size: 1.1rem;
+    }
+    .quiz-btn {
+        width: 90vw;
+        max-width: 400px;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .quiz-item {
+        width: 90vw;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    .quiz-container {
+        gap: 10px;
+    }
+    .results,
+    .recommendations,
+    .extra,
+    .no-quizzes {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .footer {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+    .all-quiz-rtn,
+    .class-rtn,
+    .teacher-rtrn {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw;
+        max-width: 400px;
+    }
+    iframe {
+        width: 90vw !important;
+        max-width: 600px;
+        height: 50vh !important;
+        min-height: 200px;
+        border-radius: 12px;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .home_page {
+        flex-direction: column;
+        height: auto;
+        min-height: 70vh;
+        padding: 1rem 0;
+    }
+    .headers {
+        font-size: 1.2em;
+        top: 30px;
+        margin-top: 5px;
+        padding: 0 0.5rem;
+    }
+    .h2-home {
+        top: 80px;
+        font-size: 1em;
+    }
+    .home_btn {
+        width: 95vw;
+        max-width: 300px;
+        height: 8vh;
+        font-size: 1em;
+        top: 60px;
+    }
+    .class-title {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+    }
+    .home_description {
+        padding: 20px 2vw 0;
+        font-size: 0.95em;
+    }
+    .classes {
+        flex-direction: column;
+        padding-top: 60px;
+        padding-right: 0;
+        padding-left: 0;
+        gap: 0.5rem;
+    }
+    .class-btn,
+    .return-btn,
+    .lesson1D-btn,
+    .lesson2D-btn,
+    .lesson3D-btn,
+    .lesson4D-btn,
+    .lesson5D-btn,
+    .lesson6D-btn,
+    .lesson1F-btn,
+    .lesson2F-btn,
+    .lesson3F-btn,
+    .lesson4F-btn,
+    .lesson5F-btn,
+    .lesson6F-btn,
+    .lesson7F-btn,
+    .lesson8F-btn,
+    .lesson9F-btn,
+    .lesson10F-btn {
+        width: 95vw;
+        max-width: 300px;
+        height: 50px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .verify-page,
+    .quiz-page {
+        padding-top: 7vh;
+    }
+    .input-txt,
+    .submit-btn,
+    .quiz-layout,
+    .subject-select {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .quiz-border {
+        width: 98vw;
+        max-width: 320px;
+        min-width: unset;
+        font-size: 1em;
+    }
+
+    #grade {
+        padding-left: 0;
+        padding-top: 30px;
+        position: relative;
+    }
+    .quiz-btn {
+        width: 95vw;
+        max-width: 300px;
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .quiz-item {
+        width: 95vw;
+        max-width: 200px;
+        font-size: 0.95em;
+    }
+    .quiz-container {
+        gap: 5px;
+    }
+    .results,
+    .recommendations,
+    .extra,
+    .no-quizzes {
+        font-size: 1em;
+        padding: 0.7rem;
+    }
+    .footer {
+        font-size: 0.8em;
+        padding: 0.3em;
+    }
+    .all-quiz-rtn,
+    .class-rtn,
+    .teacher-rtrn {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95vw;
+        max-width: 300px;
+    }
+    .fix {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .quiz-question {
+        font-size: 1.1em;
+    }
+    .stats {
+        font-size: 1em;
+    }
+    iframe {
+        width: 98vw !important;
+        max-width: 100vw;
+        height: 35vh !important;
+        min-height: 120px;
+        border-radius: 8px;
+    }
+}
